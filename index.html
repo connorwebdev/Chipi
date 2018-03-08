@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!-- <link rel="stylesheet" href="js/flip/flipout_cards.css"> -->
+
+	<!-- FONT AWESOME CDN -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,900|Source+Sans+Pro" rel="stylesheet">
+
+	<title>Chipi</title>
+	<link rel="icon" href="img/a.png">
+
+	<!---META-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta charset="utf-8">
+
+	<meta property="og:url" content="http://connor.mckenzie.yoobee.net.nz/chipi/index.html" />
+	<meta property="og:type" content="website" /> 
+	<meta property="og:title" content="Chipi" />
+	<meta property="og:description" content="Chipi. All of your cloud content just a few keystrokes away." />
+	<meta property="og:image" content="img/a-fb.png" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="http://connor.mckenzie.yoobee.net.nz/chipi/index.html" />
+	<meta name="twitter:title" content="Chipi" />
+	<meta name="twitter:description" content="Chipi. All of your cloud content just a few keystrokes away." />
+	<meta name="twitter:image" content="img/a-fb.png" />
+
+	<!-- Include jQuery -->
+	<script src="vendor/jquery-2.1.1.min.js"></script>
+
+	<!-- Include lazylinepainter -->
+	<script src="jquery/jquery.lazylinepainter-1.7.0.min.js"></script>
+
+	<!-- Include lazylinepainter svgData object -->
+	<script src="js/logoSvgData.js"></script>
+
+	<script src="js/logoAnimation.min.js"></script>
+
+	<!--============ Mail Chimp ============-->
+	<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet">
+	<style>
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	
+</style>
+
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+
+	<!--============ EXPLOSION CANVAS ============-->
+
+	<canvas id="c"></canvas>
+
+	<!--============ LANDING PAGE ============-->
+
+	<div class="page-wrapper">
+
+
+		<div class="flipout">
+
+			<div class="foc-main">
+				<img src="img/aboutFinal.svg" alt="About Chipi" class="about opacity about-transform">
+				<img src="img/emailFinal.svg" alt="Sign Up" class="emailI opacity email-transform">
+
+				<img src="img/a.png" id="logoStatic" class="opacity small" alt="Chipi Logo"/>
+				<div id='logo' class="content small"></div>
+				<h1 class="title opacity">Chipi</h1>
+			</div>
+
+		</div>
+
+		<!--============ SOCIAL MEDIA ICONS ============-->
+
+		<div class="social-wrapper opacity social-transform">
+
+			<a href="https://www.facebook.com/chipi.io/" target="_blank"><img src="img/FBFinal.svg" alt="Facebook Link" class="facebook-icon"></a>
+
+			<a href="https://twitter.com/chipitweet" target="_blank"><img src="img/twitterFinal.svg" alt="Twitter Link" class="twitter-icon"></a>
+
+			<a href="https://www.linkedin.com/company/18477699/" target="_blank"><img src="img/linkedinFinal.svg" alt="Linkedin Link" class="linkedin-icon"></a>
+		</div>
+
+		<!--============ EMAIL MODAL ============-->
+		<div id="email_signup_bubble" class="hide animated">
+			<div class="close-icon animated opacity" id="close-email"><i class="fas fa-times fa-2x" id="x-icon1"></i></div>
+			<div id="mc_embed_signup">
+					<form action="https://facebook.us17.list-manage.com/subscribe/post?u=27643b421cc3d217eb2ad4251&amp;id=80c4316d81" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+							
+							<div class="emailHead">
+								<h2 id="emailHeader" class="">Want to try it?</h2>
+								
+							</div>
+							<p class="emailtext">Subscribe to hear the latest updates and be the first to try it on release.</p>
+							<div class="mc-field-group input1">
+								<input type="email" value="" placeholder="Email" name="EMAIL" class="required email " id="mce-EMAIL">
+							</div>
+							<div class="mc-field-group input2">
+								<input type="text" value="" placeholder="First Name (Optional)" name="FNAME" class="" id="mce-FNAME">
+							</div>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>   
+							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_27643b421cc3d217eb2ad4251_80c4316d81" tabindex="-1" value=""></div>
+							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button animated opacity"></div>
+						</div>
+					</form>
+					<script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+				</div>
+			</div>
+
+		<!--============ ABOUT MODAL ============-->
+		<div class="aboutContainer animated hide" id="aboutContainer">
+			<div class="aboutHeader">
+
+				<div class="close-icon animated hide" id="close-about"><i class="fas fa-times fa-2x" id="x-icon2"></i></div>
+			</div>
+			<div class="aboutText whatCircle animated hide">
+				<h3>What is Chipi?</h3>
+				<p>CHIPI is your personal cloud search engine. 
+					Access to all your content - no matter what cloud it is on - just a few keystrokes away. 
+					But Chipi does not only search, it can connect, search, do and help.
+				</p>
+			</div>
+			<div class="aboutText standCircle animated hide">
+				<h3>What does Chipi stand for?</h3>
+				<p>CHIPI stands for Common Human Interaction Platform Interface.</p>
+			</div>
+			<div class="aboutText whyCircle animated hide">
+				<h3>Why are we building Chipi?</h3>
+				<p>In the early days the cloud was about freedom, suddenly you were able to access all of your data from anywhere and on any device.
+					It also allowed you to collaborate with your teammates in real time.
+					More importantly, it was fast and easy.</p>
+
+				<p class="bold-paragraph">But not anymore.</p>
+
+				<p>Now those of us working from the cloud can spend large amounts of time looking for content. Where was that note again? Slack? Hangouts? Drive? Gmail? Or was it a Trello card? Jira perhaps?
+				CHIPI is about bringing the joy back to your cloud experience.
+				Bringing access to all your content back to one place - <span class="bold-paragraph">CHIPI.</span></p>
+			</div>
+			<div class="aboutText teamCircle animated hide">
+				<h2>Meet the team</h2>
+			</div>
+			<div class="aboutText xtraCircle1 animated hide">
+			</div>		
+			<div class="aboutText xtraCircle2 animated hide">
+			</div>
+			<div class="aboutText xtraCircle3 animated hide">
+			</div>		
+		</div>
+
+	</div>
+
+		<!-- SCRIPT -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/script.min.js"></script>
+
+	</body>
+	</html>
