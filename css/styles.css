@@ -103,7 +103,6 @@ p {
  	height: 230px;
  	display: inline-block;
  	position: relative;
-
  }
 
  .about{
@@ -317,7 +316,7 @@ p {
 
 			#mc_embed_signup .mc-field-group input{
 				height: 33px;
-				padding: 0;
+				padding: 0 0 0 5px;
 				font-family: 'Lato', sans-serif;
 			 	font-weight: 300;
 				font-size: 1.1rem;
@@ -394,6 +393,7 @@ p {
 ==========================================*/
 
 .aboutContainer{
+	top: 0;
 	width: 100%;
 	position: absolute;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -438,8 +438,8 @@ p {
     left: 31vw;
     margin-left: -250px;
     margin-top: -250px;
-    width: 168px;
-    height: 168px;
+    width: 200px;
+    height: 200px;
 	color: white;
 	background-color: rgba(228, 39, 42, 0.9);
 }
@@ -447,6 +447,15 @@ p {
 .standCircle h3{
 	font-weight: 400;
 	color: white;
+}
+
+.gif-image {
+    position: absolute;	
+	top: 27vh;
+    left: 10vw;
+    width: 60%;
+    height: 60%;
+	border-radius: 50%;
 }
 
 .whyCircle {
@@ -457,8 +466,8 @@ p {
     left: 64vw;
     margin-left: -250px;
     margin-top: -250px;
-    width: 370px;
-    height: 370px;
+    width: 420px;
+    height: 420px;
 	background-color: rgba(255, 200, 89, 0.9);
 }
 
@@ -484,7 +493,7 @@ p {
     z-index: 120;
     position: absolute;
     top: 97vh;
-    left: 50vw;
+    left: 59vw;
     margin-left: -250px;
     margin-top: -250px;
     width: 80px;
@@ -538,10 +547,43 @@ p {
 
 @media only screen and (max-width: 530px){
 
+	.page-wrapper {
+		background-color: #ebecde;
+	}
+	
+	.title {
+	 	font-size: 3rem;
+	    transform: translateX(-20%);		
+	 }
+
+	.flipout{
+		height: 150px;
+		position: relative;
+		top: 61%;
+		margin-top: -210px;
+	}
+
+	.foc-main{
+		background-color: rgba(255,253,56, 0);
+		width: 150px;
+		height: 150px;
+		display: inline-block;
+		position: relative;
+	}
+
+	 .page-wrapper{
+		min-height: 0px;
+	 }
+
+	.social-wrapper{
+		bottom: 20px;
+	}
+
 	/*EMAIL MODAL*/
 	.emailI{
-		top:-128px;
-		right:-5vw;
+		top: -114px;
+	    right: -3vw;
+	    height: 54px;
 	}
 
 	#email_signup_bubble{
@@ -572,11 +614,28 @@ p {
 		right:-10px;
 	}
 
+
+
+	img {
+		height: 100%;
+	}
+
 	/*ABOUT MODAL*/
 
 	.about{
-		top:-120px;
+		top:-110px;
 		left:0;
+		height: 50px;
+	}
+
+	.gif-image {
+	    position: initial;	
+		top: 27vh;
+		left: 10vw;
+		width: 60%;
+		height: 60%;
+		border-radius: 0;
+		width: 100%;
 	}
 
 	canvas{
@@ -586,7 +645,7 @@ p {
 
 @media only screen and (max-width: 1400px){
 	.whyCircle{
-		padding:80px;
+		padding: 85px;
 	}
 }
 
@@ -598,6 +657,7 @@ p {
 	}
 
 	.teamCircle {
+	    top: 100vh;		
 		left:60vw;
 	}
 	
